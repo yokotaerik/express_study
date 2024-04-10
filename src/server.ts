@@ -5,8 +5,13 @@ const app = express();
 
 // Adicione os middleares aqui
 
+// Define como padrão de comunicação JSON
+app.use(express.json());
+
+
 // Use as rotas definidas no routes.ts
 app.use(routes);
+
 
 const PORT = 3333;
 
